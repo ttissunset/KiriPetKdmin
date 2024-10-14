@@ -3,9 +3,9 @@ import { createWebHashHistory, createRouter } from "vue-router";
 // 创建路由规则
 const routes = [
   {
-    path: "/analyse",
+    path: "/",
     name: "analyse",
-    // redirect: "/analyse",
+    // redirect: "/ananlyse",
     component: () => import("../pages/analysePage.vue"),
   },
 ];

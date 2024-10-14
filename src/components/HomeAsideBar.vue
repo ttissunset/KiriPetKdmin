@@ -5,7 +5,7 @@
     <div class="toggle-bar">
       <div class="logo">
         <img src="../assets/images/logo.png" />
-        <h2>Kiri<span class="danger">Admin</span></h2>
+        <h2>Kiri<span style="color: var(--deongaree);">Admin</span></h2>
       </div>
       <div class="close" id="close-btn">
         <span class="material-icons-sharp">close</span>
@@ -14,7 +14,7 @@
     <div class="sidebar">
       <a href="#">
         <span class="material-icons-sharp">dashboard</span>
-        <div>主页</div>
+        <div>仪表盘</div>
       </a>
       <a href="#">
         <span class="material-icons-sharp">person_outline</span>
@@ -145,71 +145,5 @@
   color: var(--color-white);
   font-size: 11px;
   border-radius: var(--border-radius-1);
-}
-
-@media screen and (max-width: 1200px) {
-  .aside-bar .logo h2 {
-    display: none;
-  }
-
-  .aside-bar .sidebar div {
-    display: none;
-  }
-
-  .aside-bar .sidebar a {
-    width: 88px;
-  }
-
-  .aside-bar .sidebar a:last-child {
-    position: relative;
-    margin-top: 26px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .aside-bar {
-    position: fixed;
-    background-color: var(--color-white);
-    width: 240px;
-    z-index: 3;
-    box-shadow: 1rem 3rem 4rem var(--color-light);
-    height: 100vh;
-    left: -100%;
-    display: none;
-    animation: showMenu 0.4s ease forwards;
-  }
-
-  @keyframes showMenu {
-    to {
-      left: 0;
-    }
-  }
-
-  .aside-bar .logo {
-    margin-left: 1rem;
-  }
-
-  .aside-bar .logo h2 {
-    display: inline;
-  }
-
-  .aside-bar .sidebar div {
-    display: inline;
-  }
-
-  .aside-bar .sidebar a {
-    width: 100%;
-    height:48px;
-  }
-
-  .aside-bar .sidebar a:last-child {
-    position: absolute;
-    bottom: 80px;
-  }
-
-  .aside-bar .toggle .close {
-    display: inline-block;
-    cursor: pointer;
-  }
 }
 </style>
