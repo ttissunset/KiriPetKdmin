@@ -4,8 +4,19 @@ import { createWebHashHistory, createRouter } from "vue-router";
 const routes = [
   {
     path: "/",
+    name: "dashboard",
+    redirect: "/dashboard",
+    component: () => import("../pages/dashboardPage.vue"),
+    children: [
+      {
+        path: "/dashboard",
+        component: () => import("../pages/dashboardPage.vue"),
+      },
+    ],
+  },
+  {
+    path: "/analyse",
     name: "analyse",
-    // redirect: "/ananlyse",
     component: () => import("../pages/analysePage.vue"),
   },
 ];

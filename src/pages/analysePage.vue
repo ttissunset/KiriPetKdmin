@@ -106,7 +106,6 @@ import users from "../mock/users";
         <a href="#">展示所有</a>
       </div>
     </div>
-
     <HomeRightBar></HomeRightBar>
   </div>
 </template>
