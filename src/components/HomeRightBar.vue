@@ -13,7 +13,7 @@
           <small class="text-muted">Admin</small>
         </div>
         <div class="profile-photo">
-          <img src="../assets/images/profile-1.jpg" />
+          <img src="../assets/images/kiri.png" />
         </div>
       </div>
     </div>
@@ -85,11 +85,11 @@
 
 .right-section .nav .profile {
   display: flex;
-  gap: 32px;
+  gap: 22px;
   text-align: right;
 }
 
-.right-section .nav .profile .profile-photo {
+.right-section .nav .profile .profile-photo img{
   width: 45px;
   height: 45px;
   border-radius: 50%;

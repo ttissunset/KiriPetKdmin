@@ -43,14 +43,14 @@ onMounted(() => {
       </a>
       <a :class="{ active: isActive('/user') }" @click="navigateTo('/user')">
         <span class="material-icons-sharp">person_outline</span>
-        <div>用户</div>
+        <div>用户管理</div>
       </a>
       <a
         :class="{ active: isActive('/analyse') }"
         @click="navigateTo('/analyse')"
       >
-        <span class="material-icons-sharp">insights</span>
-        <div>分析</div>
+        <span class="material-icons-sharp">request_quote</span>
+        <div>订单管理</div>
       </a>
       <a
         :class="{ active: isActive('/message') }"
